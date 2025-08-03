@@ -28,7 +28,8 @@
             margin: 20px;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 600px;
             margin: auto;
         }
         .button {
@@ -39,18 +40,33 @@
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
+            display: inline-block;
+            margin-top: 10px;
         }
         footer {
             background-color: #333;
             color: white;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
+        }
+        audio {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            h2, h3, p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
     <header>
         <h1>Undangan Pernikahan</h1>
     </header>
@@ -68,9 +84,10 @@
     <section>
         <div class="container">
             <h3>RSVP & Informasi lebih lanjut</h3>
-            <p>Silakan konfirmasi kehadiran atau hubungi kami di:</p>
-            <p><strong>Email:</strong> <a href="mailto:gifarutama9@gmail.com">gifarutama9@gmail.com</a></p>
-            <a href="mailto:gifarutama9@gmail.com" class="button">RSVP Sekarang</a>
+            <p>Silakan konfirmasi kehadiran melalui WhatsApp:</p>
+            <a href="https://wa.me/628516197429?text=Halo%20Gifar%20dan%20Aprilia,%20saya%20akan%20hadir%20di%20acara%20pernikahan%20kalian" class="button">Konfirmasi via WhatsApp</a>
+            <p>Atau hubungi melalui email:</p>
+            <a href="mailto:gifarutama9@gmail.com" class="button">Email RSVP</a>
         </div>
     </section>
 
